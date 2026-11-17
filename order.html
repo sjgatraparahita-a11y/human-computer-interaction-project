@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Inconsolata:wght@200..900&family=Libertinus+Mono&Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+    <div class="logo">Mamma Mia <span>Ristorante</span></div>
+    <ul class="nav-links">
+        <li><a href="./home.html">Home</a></li>
+        <li><a href="./menu.html">Menu</a></li>
+        <li><a href="./about.html">About Us</a></li>
+        <li><a href="./rewards.html">Rewards</a></li>
+        <li><a>Order</a></li>
+    </ul>
+    <a href="./order.html" class="nav-button">Order Now</a>
+    </nav>
+
+    <h1 class="page-title">ORDER</h1>
+
+        <form id="order-form">
+
+            <h2>Order Form</h2>
+
+            <label>Name</label>
+            <input type="text" id="name">
+
+            <label>Email</label>
+            <input type="email" id="email">
+
+            <label>Order Type</label>
+            <select id="orderType">
+                <option value="">Select Option</option>
+                <option value="pickup">Pick-Up</option>
+                <option value="delivery">Delivery</option>
+            </select>
+
+            <label>Address</label>
+            <textarea id="address"></textarea>
+
+            <label>Product</label>
+            <select id="product">
+                <option value="">Select Product</option>
+                <option value="Arrosticini">Arrosticini</option>
+                <option value="Bistecca alla Fiorentina">Bistecca alla Fiorentina</option>
+                <option value="Carbonara">Carbonara</option>
+                <option value="Fonduta Valdostana">Fonduta Valdostana</option>
+                <option value="Orechiette Con Cima di Rapa">Orechiette Con Cima di Rapa</option>
+                <option value="Pizza Napoletana">Pizza Napoletana</option>
+            </select>
+
+            <label>Add-ons</label>
+
+            <div class="checkbox-group">
+                <label>
+                    <input type="checkbox" name="addons" value="Utensils">
+                    Utensils
+                </label>
+
+                <label>
+                    <input type="checkbox" name="addons" value="Extra Toppings">
+                    Extra Toppings
+                </label>
+            </div>
+
+            <label>Payment Method</label>
+
+            <div class="radio-group">
+                <label>
+                    <input type="radio" name="payment" value="Cash">
+                    Cash
+                </label>
+
+                <label>
+                    <input type="radio" name="payment" value="Credit Card">
+                    Credit Card
+                </label>
+
+                <label>
+                    <input type="radio" name="payment" value="Bank Transfer">
+                    Bank Transfer
+                </label>
+            </div>
+
+            <button type="submit">
+                Submit Order
+            </button>
+
+        </form>
+
+        <p id="errorMessage"></p>
+
+    <footer class="footer">
+
+        <div class="footer-left">
+            <h3>Contact Us</h3>
+
+            <div class="footer-item">
+                <span>42nd st. New York City<br>New York 10001</span>
+            </div>
+
+            <div class="footer-item">
+                <span>+1 (555) 123-4567</span>
+            </div>
+
+            <div class="footer-item">
+                <span>ciaobella@mammamia.com</span>
+            </div>
+        </div>
+
+        <div class="footer-right">
+            <h3>Business Hours</h3>
+
+            <p>Monday - Thursday: 11 am - 10 pm</p>
+            <p>Friday - Saturday: 11 am - 11 pm</p>
+            <p>Sunday: 12 pm - 9 pm</p>
+        </div>
+
+    </footer>
+    <script src="order.js"></script>
+</body>
+</html>

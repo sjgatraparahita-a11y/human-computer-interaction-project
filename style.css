@@ -1,0 +1,366 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F3F2F2;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #800000;
+}
+
+.nav-links {
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #800000;
+}
+
+.nav-button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    margin-left: 10px;
+    padding: 8px 20px;
+    background-color: #800000;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.nav-button:hover {
+    color: black;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.hero-content {
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content h1 {
+    white-space: nowrap;
+    text-align: center;
+    font-family: 'Bodoni Moda', serif;
+    font-weight: bold;
+    font-size: 64px;
+    margin-bottom: 20px;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.btn-primary,
+.btn-secondary {
+    font-family: 'Poppins', sans-serif;
+    padding: 16px 28px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #800000;
+    color: white;
+    margin-right: 40px;
+}
+
+.btn-secondary {
+    color: white;
+    background-color: gray;
+    margin-left: 40px;
+}
+
+.product-grid {
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+
+    gap: 30px;
+
+    max-width: 1400px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.product-grid-title {
+    font-family: 'Bodoni Moda', serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.product-card {
+    height: 450px;
+
+    border-radius: 12px;
+    overflow: hidden;
+
+    background-color: #ffe9e3;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.product-card img {
+    height: 50%;
+    width: 100%;
+
+    object-fit: cover;
+}
+
+.card-content {
+    height: 50%;
+
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 15px;
+}
+
+.card-header h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    margin: 0;
+    font-size: 20px;
+}
+
+.price {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #800000;
+}
+
+.card-content p {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    line-height: 1.5;
+    color: black;
+}
+
+.page-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 80px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.footer {
+    background-color: #d9d9d9;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: space-between;
+
+    padding: 10px 10%;
+
+    gap: 50px;
+}
+
+.footer-left,
+.footer-right {
+    flex: 1;
+}
+
+.footer h3 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.footer-item {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 15px;
+
+    margin-bottom: 15px;
+}
+
+.footer-right p {
+    margin-bottom: 10px;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+
+    max-width: 1400px;
+    margin: 80px auto;
+    padding: 0 20px;
+}
+
+.about-2 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 60px;
+
+    max-width: 1400px;
+    margin: 80px auto;
+    padding: 0 20px;
+}
+
+.about span {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #800000;
+}
+
+.about-text {
+    flex: 2;
+}
+
+.about-text h2 {
+    font-family: 'PLayfair Display', serif;
+    font-size: 29px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+.about-text p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;    
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+.story-image {
+    flex: 1;
+    text-align: center;
+}
+
+.story-image img {
+    width: 100%;
+    max-width: 500px;
+
+    border-radius: 10px;
+}
+
+.caption-primary {
+    margin-top: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.caption-secondary {
+    margin-top: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    color: #800000;
+    font-style: italic;
+}
+
+.rewards-desc {
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.rewards-desc span {
+    color: #800000;
+}
+
+#order-form {
+    font-family: 'Poppins', sans-serif;
+    max-width: 700px;
+    margin: 50px auto;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+input,
+select,
+textarea {
+    padding: 10px;
+    font-size: 16px;
+}
+
+button {
+    padding: 12px;
+    cursor: pointer;
+}
+
+#errorMessage {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 15px;
+    min-height: 20px;
+}
